@@ -24,5 +24,5 @@ We approximate the length of the Mandelbrot set boundary as an analogue to the c
 Run each task script in order (`task1_fractal.m`, `task2_bisection.m`, etc.), or run `run_all.m` to execute the entire pipeline.
 
 ## Author
-Your Name – AMS 595/DCS 525, Stony Brook University
+Isaac Odoom Amanor – AMS 595/DCS 525, Stony Brook University
 
