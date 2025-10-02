@@ -1,51 +1,28 @@
-# AMS 595 / DCS 525 — Project 2  
-**Mandelbrot Fractal Analysis**
+    # How-Long-is-the-Coast-of-Britain-
+MATLAB project for AMS 595/DCS 525 exploring Mandelbrot’s coastline paradox. Implements fractal iteration, bisection boundary detection, polynomial fitting, and arc-length integration to approximate the Mandelbrot set boundary length.
+# AMS 595 / DCS 525 Project 2: How Long is the Coast of Britain?
 
-Author: *Isaac Odoom Amanor*  
+This repository contains MATLAB code, figures, and report files for Project 2.
 
----
+## Overview
+We approximate the length of the Mandelbrot set boundary as an analogue to the coastline paradox:
+1. **Task 1:** Implemented `fractal(c)` to test divergence of points in the Mandelbrot set.
+2. **Task 2:** Used the bisection method with an indicator function to locate boundary points.
+3. **Task 3:** Fitted a 15th-order polynomial to the boundary.
+4. **Task 4:** Computed curve length numerically via arc-length integration.
 
-## 📖 Overview
-This project explores the **Mandelbrot set** using numerical and computational methods.  
-The workflow is divided into four tasks:
+## Results
+- **Top boundary length:** ~3.9963  
+- **Top + bottom boundary length:** ~7.99  
 
-1. **Visualization** — Generate Mandelbrot fractal images using the escape-time algorithm.  
-2. **Boundary Extraction** — Apply automatic bracketing + bisection to find the fractal boundary.  
-3. **Polynomial Fit** — Approximate the top boundary with a degree–15 polynomial.  
-4. **Boundary Length** — Compute the length of the polynomial curve via arc-length integration.  
+## Repository Layout
+- `code/` – MATLAB scripts and functions for each task  
+- `figures/` – Generated plots used in the report  
+- `report/` – Final LaTeX report  
 
-The project demonstrates how fractal geometry can be visualized, approximated, and quantified numerically.
+## Instructions
+Run each task script in order (`task1_fractal.m`, `task2_bisection.m`, etc.), or run `run_all.m` to execute the entire pipeline.
 
----
+## Author
+Isaac Odoom Amanor – AMS 595/DCS 525, Stony Brook University
 
-## ⚙️ Methods
-- Implemented in **MATLAB**.  
-- Escape-time iteration for visualization.  
-- Bracketing and bisection for robust boundary detection.  
-- Polynomial fitting using `polyfit` (order 15).  
-- Arc-length computed with numerical integration.  
-
----
-
-## 📊 Results
-- Escape-time visualization of Mandelbrot set.  
-- Boundary points (top and bottom) extracted accurately.  
-- Smooth polynomial fit to the top boundary.  
-- Boundary length on interval $[-1.759850, \, 0.367730]$:  
-  **L ≈ 3.9963**
-
----
-
-## 🖼️ Figures
-
-| Task 1: Visualization | Task 2: Boundary Extraction |
-|-----------------------|-----------------------------|
-| ![Figure 1](Figure_1.pdf) | ![Figure 2](Figure_2.pdf) |
-
-| Task 3: Polynomial Fit | Task 4: Arc-Length Integrand |
-|------------------------|------------------------------|
-| ![Figure 3](Figure_3.pdf) | ![Figure 4](Figure_4.pdf) |
-
----
-
-## 📂 Repository Structure
